@@ -3,17 +3,17 @@ import VideoList from './../components/VideoList.js';
 import changeVideo from './../actions/currentVideo.js';
 
 var mapStateToProps = (state) => {
-  console.log('-------->', state)
+  console.log('-------->', state);
   return {
     videos: state.videoList
-  }
-}
+  };
+};
 var mapDispatchToProps = (dispatch) => {
   return {
     handleVideoListEntryTitleClick: () => {
       dispatch(changeVideo());
     }
-  }
+  };
 };
 
 let VideoListContainer = connect(mapStateToProps, mapDispatchToProps)(VideoList);

@@ -8,8 +8,8 @@ const mapDispatchToProps = dispatch => {
     handleSearchInputChange: (value) => {
       dispatch(handleSearchChange(value));
     }
-  }
-}
+  };
+};
 
 var SearchContainer = connect(null, mapDispatchToProps)(Search);
 
